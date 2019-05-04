@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+    
+</head>
+
+<body>
+<div class="ui main text container segment">
+<div class="ui huge header">
+Login as Admin
+</div>
+    <form action="/login" method="POST" class="ui form">
+            <div class="field">
+                <label>UserName</label>
+                <input type="text" placeholder="Username" name="username">
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input type="password" placeholder="Password" name="password">
+            </div>
+            <div class="g-recaptcha" data-sitekey="6LdluoIUAAAAAKLqwhShiC2PBIgCiOnKMu_2AzEm"></div>
+            <button class="ui button" type="submit">Submit</button>
+                
+</div>
+    </form>
+</body>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</html>

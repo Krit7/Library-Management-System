@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+</head>
+
+<body>
+<div class="ui raised very padded text container segment">
+    <h1 class="ui header">Books Library</h1>
+    <ul>
+        <% for(var i=0;i<Books.length;i++) { %>
+            <li>
+                <strong>Book Name :-<%=Books[i].name%></strong>
+                <br> Author Name :-
+                <%=Books[i].authorname%>
+                    <a href="/issuebook/<%=Books[i]._id%>"><button class="small ui button">Issue Book</button></a>
+                    <br><br>
+            </li>
+            <%}%>
+    </ul>
+    <a href="/issuedbooks"><button class="ui button">Issued Books</button></a>
+    <a href="/logout"><button class="ui button">LogOut</button></a>
+    </div>
+</body>
+
+</html>

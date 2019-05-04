@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+</head>
+
+<body>
+<div class="ui main text container segment">
+<div class="ui huge header">
+Register as Admin
+</div>
+    <form action="/register" method="POST" class="ui form">
+    <div class="field">
+        <label>Username</label>
+        <input type="text" placeholder="Username" name="username">
+    </div>
+    <div class="field">
+        <label>Password</label>
+        <input type="password" placeholder="Password" name="password">
+    </div>
+    <div class="field">
+        <label>Re-Type Password</label>
+        <input type="password" placeholder="Re-Type Password" name="password2">
+    </div>
+        <button type="submit" class="ui button">Sign Up</button>
+    </form>
+</div>
+</body>
+
+</html>
